@@ -38,6 +38,8 @@ Create a Task : Add new tasks with a title and description.
 o	Content: The created task object.
 
 
+
+
 Get All Tasks : List all existing tasks.
 
 •	Endpoint: GET /api/tasks
@@ -45,6 +47,7 @@ Get All Tasks : List all existing tasks.
 •	Success Response Code: 200
 
 o	Content: Array of task objects.
+
 
 
 Update Task Details : Edit task details such as title and description.
@@ -62,6 +65,8 @@ Copy code
 •	Success Response Code: 200
 
 o	Content: The updated task object.
+
+
 
 Mark Task as Completed : Update the status of tasks to completed.
 
@@ -87,6 +92,8 @@ o	Code: 400
 
 o	Content: Error message if the task is already completed.
 
+
+
 Delete a Task : Remove tasks from the list.
 
 •	Endpoint: DELETE /api/tasks/:id
@@ -96,6 +103,8 @@ Delete a Task : Remove tasks from the list.
 o	Code: 200
 
 o	Content: { "message": "Task deleted" }
+
+
 
 Error Handling
 
@@ -128,6 +137,8 @@ Uses middleware for parsing JSON.
 
 Includes routes from routes/tasks.js.
 
+
+
 config/db.js
 
 Purpose: Manages the connection to MongoDB.
@@ -135,12 +146,16 @@ Purpose: Manages the connection to MongoDB.
 Key Decisions:
 Logs connection errors and stops the app if the connection fails.
 
+
+
 models/Task.js
 
 Purpose: Defines what a task looks like in the database.
 
 Key Decisions:
 Includes fields for title, description, and completed.
+
+
 
 routes/tasks.js
 
@@ -152,6 +167,12 @@ Uses validation to ensure data is correct before processing.
 
 Key Decisions
 Separate Routes:
+
+
+
+
+
+
 
 Reason: Makes the API easier to understand and manage by splitting different actions into separate routes.
 Data Validation:
