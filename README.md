@@ -5,6 +5,9 @@ Node Assignment Application
 This is a application built with Node.js and MongoDB. It allows users to create tasks, view all tasks, mark tasks as completed, edit task details, and delete tasks.
 
 
+
+
+
 Features
 
 •	Create Tasks: Add new tasks with a title and description.
@@ -18,6 +21,10 @@ Features
 •	Delete Tasks: Remove tasks from the list.
 
 •	Data Persistence: All tasks are stored in a MongoDB database.
+
+
+
+
 
 
 API Endpoints
@@ -72,9 +79,7 @@ Mark Task as Completed : Update the status of tasks to completed.
 
 •	Endpoint: PUT /api/tasks/:id/completed
 
-•	Request Body:
-
-json
+•	Request Body:json
 
 Copy code
 {
@@ -98,9 +103,8 @@ Delete a Task : Remove tasks from the list.
 
 •	Endpoint: DELETE /api/tasks/:id
 
-•	Success Response:
+•	Success Response: 200
 
-o	Code: 200
 
 o	Content: { "message": "Task deleted" }
 
@@ -110,9 +114,15 @@ Error Handling
 
 •	404 Not Found: Returned if a task with the specified ID does not exist.
 
+
 •	400 Bad Request: Returned if required data is missing or invalid.
 
+
 •	500 Internal Server Error: Returned for server-side errors.
+
+
+
+
 
 
 Project Root
