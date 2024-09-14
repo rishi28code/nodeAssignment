@@ -89,16 +89,19 @@ Purpose: Sets up the Express server and connects to MongoDB.
 Key Decisions:
 Uses middleware for parsing JSON.
 Includes routes from routes/tasks.js.
+
 config/db.js
 
 Purpose: Manages the connection to MongoDB.
 Key Decisions:
 Logs connection errors and stops the app if the connection fails.
+
 models/Task.js
 
 Purpose: Defines what a task looks like in the database.
 Key Decisions:
 Includes fields for title, description, and completed.
+
 routes/tasks.js
 
 Purpose: Handles API requests for tasks.
