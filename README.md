@@ -17,6 +17,7 @@ Features
 API Endpoints
 
 Create a Task : Add new tasks with a title and description.
+
 •	Endpoint: POST /api/tasks
 •	Request Body:
 json
@@ -30,12 +31,14 @@ o	Code: 201
 o	Content: The created task object.
 
 Get All Tasks : List all existing tasks.
+
 •	Endpoint: GET /api/tasks
 •	Success Response:
 o	Code: 200
 o	Content: Array of task objects.
 
 Update Task Details : Edit task details such as title and description.
+
 •	Endpoint: PUT /api/tasks/:id/details
 •	Request Body:
 json
@@ -49,6 +52,7 @@ o	Code: 200
 o	Content: The updated task object.
 
 Mark Task as Completed : Update the status of tasks to completed.
+
 •	Endpoint: PUT /api/tasks/:id/completed
 •	Request Body:
 json
@@ -64,12 +68,14 @@ o	Code: 400
 o	Content: Error message if the task is already completed.
 
 Delete a Task : Remove tasks from the list.
+
 •	Endpoint: DELETE /api/tasks/:id
 •	Success Response:
 o	Code: 200
 o	Content: { "message": "Task deleted" }
 
 Error Handling
+
 •	404 Not Found: Returned if a task with the specified ID does not exist.
 •	400 Bad Request: Returned if required data is missing or invalid.
 •	500 Internal Server Error: Returned for server-side errors.
