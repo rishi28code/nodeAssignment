@@ -1,10 +1,12 @@
 Node Assignment Application
 
-Overview
+
+
 This is a application built with Node.js and MongoDB. It allows users to create tasks, view all tasks, mark tasks as completed, edit task details, and delete tasks.
 
 
 Features
+
 •	Create Tasks: Add new tasks with a title and description.
 •	View Tasks: List all existing tasks.
 •	Update Tasks: Edit task details such as title and description.
@@ -13,6 +15,7 @@ Features
 •	Data Persistence: All tasks are stored in a MongoDB database.
 
 API Endpoints
+
 Create a Task : Add new tasks with a title and description.
 •	Endpoint: POST /api/tasks
 •	Request Body:
@@ -71,7 +74,7 @@ Error Handling
 •	400 Bad Request: Returned if required data is missing or invalid.
 •	500 Internal Server Error: Returned for server-side errors.
 
-Code Structure
+
 Project Root
 
 app.js: Starts the server, connects to MongoDB, and sets up routes.
